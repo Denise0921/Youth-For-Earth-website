@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- This tells the browser this is an HTML5 document -->
+<html lang="en">
+<!-- The <html> tag is the root element, lang="en" tells search engines this page is in English -->
+<head>
+    <!-- The <head> section contains metadata (information about the page) that users don't see -->
+    <meta charset="UTF-8">
+    <!-- This tells the browser what character encoding to use (UTF-8 supports all languages) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This makes the website responsive - it will work on mobile phones and tablets -->
+    <title>Youth For Earth - Global Climate Change Awareness for Teens</title>
+    <!-- This is the text that appears in the browser tab -->
+    
+    <!-- Link to our custom CSS file that styles the website -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load the Inter font family from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- The <body> contains all the visible content of the webpage -->
+    
+    <!-- Navigation Bar - appears at the top of every page -->
+    <nav class="navbar" id="navbar">
+        <!-- <nav> is a semantic HTML5 tag for navigation -->
+        <div class="nav-container">
+            <!-- Container div to center and limit the width of navigation content -->
+            <a href="index.html" class="logo">🌍 Youth For Earth</a>
+            <!-- Logo link that takes users back to homepage -->
+            
+            <!-- Navigation menu list -->
+            <ul class="nav-menu" id="nav-menu">
+                <!-- <ul> creates an unordered list, <li> creates list items -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facts.html">Global Facts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile menu toggle (hamburger menu) - only visible on small screens -->
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <!-- Three lines that form a hamburger menu icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area - everything below the navigation -->
+    <main class="main-content">
+        <!-- <main> is a semantic HTML5 tag for the main content -->
+        
+        <!-- Hero Section - the big banner at the top of the page -->
+        <section class="hero">
+            <!-- <section> is a semantic HTML5 tag for different page sections -->
+            <div class="container">
+                <!-- Container div to center content and limit width -->
+                <div class="hero-content">
+                    <!-- Main heading of the page -->
+                    <h1>Youth For Earth</h1>
+                    <!-- Subtitle/description -->
+                    <p>Empowering teens to take action against climate change and build a sustainable future</p>
+                    <!-- Call-to-action buttons -->
+                    <a href="info.html" class="btn">Learn More</a>
+                    <!-- Primary button (green) -->
+                    <a href="contact.html" class="btn btn-secondary">Get Involved</a>
+                    <!-- Secondary button (brown) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🌱 Educate</h3>
+                        <p>We provide accurate, accessible information about climate change and its impacts on our planet. Knowledge is the first step toward meaningful action.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤝 Connect</h3>
+                        <p>We bring together teens from around the world who share a passion for environmental protection and climate action.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚡ Activate</h3>
+                        <p>We inspire and support young people to take concrete steps in their communities to combat climate change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Matters Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Why Climate Action Matters Now</h2>
+                <div class="card">
+                    <h3>The Time is Now</h3>
+                    <p>Climate change isn't a distant problem for future generations - it's happening right now, and it's affecting our lives today. As teens, we have a unique opportunity to shape the world we'll inherit. The decisions we make and the actions we take today will determine the quality of life for billions of people in the coming decades.</p>
+                    
+                    <h3>Our Generation's Responsibility</h3>
+                    <p>We're the generation that will live with the consequences of climate change, but we're also the generation with the power to change course. Through innovation, activism, and collective action, we can create a more sustainable and just world.</p>
+                    
+                    <h3>Every Action Counts</h3>
+                    <p>From reducing our carbon footprint to advocating for policy changes, every individual action contributes to the larger movement for climate justice. Together, we can make a difference.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Facts Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Climate Change in Numbers</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="fact-number">1.5°C</div>
+                        <div class="fact-text">Global temperature increase limit to avoid catastrophic climate impacts</div>
+                    </div>
+                    <div class="card">
+                        <div class="fact-number">2030</div>
+                        <div class="fact-text">Critical deadline to cut global emissions by 45%</div>
+                    </div>
+                    <div class="card">
+                        <div class="fact-number">1.8B</div>
+                        <div class="fact-text">Young people worldwide who can drive climate action</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section">
+            <div class="container">
+                <div class="card" style="text-align: center;">
+                    <h2>Ready to Make a Difference?</h2>
+                    <p>Join thousands of teens worldwide who are taking action for our planet. Whether you're just starting your climate journey or already leading initiatives in your community, there's a place for you here.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="contact.html" class="btn">Join Our Movement</a>
+                        <a href="facts.html" class="btn btn-secondary">Explore the Facts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="TikTok">🎵</a>
+            </div>
+            <p>&copy; 2025 Youth For Earth. Empowering teens for climate action.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

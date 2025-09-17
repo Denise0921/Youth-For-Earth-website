@@ -1,0 +1,51 @@
+// Instructions for setting up Google Sheets integration
+function setupGoogleSheetsInstructions() {
+    console.log(`
+    📋 GOOGLE SHEETS INTEGRATION SETUP INSTRUCTIONS:
+    
+    1. Open your Google Spreadsheet: ${GOOGLE_SHEETS_URL}
+    
+    2. Go to Extensions > Apps Script
+    
+    3. Replace the default code with the following:
+    
+    function doPost(e) {
+        const sheet = SpreadsheetApp.getActiveSheet();
+        const data = JSON.parse(e.postData.contents);
+        
+        const row = [
+            data.timestamp,
+            data.name,
+            data.email,
+            data.age,
+            data.location,
+            data.interest,
+            data.involvement,
+            data.experience,
+            data.skills,
+            data.message,
+            data.newsletter
+        ];
+        
+        sheet.appendRow(row);
+        
+        return ContentService
+            .createTextOutput(JSON.stringify({success: true}))
+            .setMimeType(ContentService.MimeType.JSON);
+    }
+    
+    4. Save the script and deploy it as a web app:
+       - Click Deploy > New deployment
+       - Choose "Web app" as the type
+       - Set access to "Anyone"
+       - Click Deploy
+    
+    5. Copy the web app URL and replace GOOGLE_SCRIPT_URL in this file
+    
+    6. Add headers to your spreadsheet:
+       Timestamp | Name | Email | Age | Location | Interest | Involvement | Experience | Skills | Message | Newsletter
+    `);
+}
+
+// Show setup instructions in console
+setupGoogleSheetsInstructions();

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Youth For Earth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌍 Youth For Earth</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facts.html">Global Facts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Get Involved</h1>
+                    <p>Join our movement and make a difference for our planet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Join Youth For Earth</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <select id="age" name="age" required>
+                                <option value="">Select your age</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Location (City, Country) *</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">How did you hear about us? *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="school">School/Teacher</option>
+                                <option value="friend">Friend/Family</option>
+                                <option value="search">Online Search</option>
+                                <option value="news">News Article</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="involvement">How would you like to get involved? *</label>
+                            <select id="involvement" name="involvement" required>
+                                <option value="">Select an option</option>
+                                <option value="learn">Learn more about climate change</option>
+                                <option value="connect">Connect with other young activists</option>
+                                <option value="organize">Organize events in my community</option>
+                                <option value="volunteer">Volunteer for environmental projects</option>
+                                <option value="advocate">Advocate for climate policies</option>
+                                <option value="all">All of the above</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Do you have any experience with environmental activism?</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select an option</option>
+                                <option value="none">No experience</option>
+                                <option value="school">School environmental club</option>
+                                <option value="community">Community clean-up events</option>
+                                <option value="climate-strike">Climate strikes/protests</option>
+                                <option value="online">Online activism</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">What skills or interests do you have that could help our mission?</label>
+                            <textarea id="skills" name="skills" placeholder="e.g., social media, writing, organizing events, science, art, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us more about yourself, your concerns about climate change, or any questions you have..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                                <span class="checkbox-text">I would like to receive updates about Youth For Earth activities and climate action opportunities</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkbox-text">I agree to the privacy policy and understand that my information will be used to connect me with climate action opportunities *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn" id="submitBtn">
+                            <span id="submitText">Join Our Movement</span>
+                            <span id="submitLoading" class="loading" style="display: none;"></span>
+                        </button>
+                    </form>
+
+                    <div id="messageContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ways to Get Involved Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Ways to Get Involved</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>📚 Start Learning</h3>
+                        <p>Begin your climate education journey by exploring our resources and understanding the science behind climate change.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏫 School Action</h3>
+                        <p>Start or join an environmental club at your school. Organize climate awareness events and advocate for sustainable practices.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌱 Community Projects</h3>
+                        <p>Get involved in local environmental initiatives like tree planting, clean-up events, or community gardens.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📱 Digital Activism</h3>
+                        <p>Use social media to spread awareness, share information, and connect with other young climate activists worldwide.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🎤 Raise Your Voice</h3>
+                        <p>Participate in climate strikes, write to your representatives, and advocate for climate-friendly policies.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤝 Connect & Collaborate</h3>
+                        <p>Join our global network of young people working together to create positive environmental change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="section">
+            <div class="container">
+                <div class="card" style="text-align: center;">
+                    <h2>Stay Connected</h2>
+                    <p>Follow us on social media to stay updated on the latest climate news, action opportunities, and success stories from our global community.</p>
+                    <div class="social-links large-social" style="margin: 2rem 0;">
+                        <a href="#" aria-label="Facebook" class="facebook-logo">Facebook</a>
+                        <a href="#" aria-label="Instagram" class="instagram-logo">Instagram</a>
+                    </div>
+                    <p><strong>Email:</strong> hello@youthforearth.org</p>
+                    <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook" class="facebook-logo-small">f</a>
+                <a href="#" aria-label="Instagram" class="instagram-logo-small">📷</a>
+            </div>
+            <p>&copy; 2025 Youth For Earth. Empowering teens for climate action.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
