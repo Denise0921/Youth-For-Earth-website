@@ -244,9 +244,9 @@ Involvement | Experience | Skills | Message | Newsletter
 ## 📞 Contact & Support
 
 **Project Developer**: DENISE LOO YON HUI  
-**Institution**: UNIVERSITI TUNKU ABDUL RAHMAN, UTAR SG LONG 
+**Institution**: UNIVERSITI TUNKU ABDUL RAHMAN, UTAR SG LONG  
 **Course**: MULTIMEDIA DESIGN AND APPLICATION  
-**Project Topic**: YOUTH FOR EARTH-GLOBAL CLIMATE CHANGE AWARENESS FOR TEENS
+**Project Topic**: YOUTH FOR EARTH-GLOBAL CLIMATE CHANGE AWARENESS FOR TEENS  
 **Email**: deniseyhloo@gmail.com  
 
 ---
